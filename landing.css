@@ -5,21 +5,27 @@
 }
 
 body {
-  font-family: Times New Roman, sans-serif;/* font style niya*/
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background: url(091.gif) no-repeat center center;
+  background-size: cover;
+  image-rendering: auto;
   line-height: 1.6;
 }
 
 
+
 nav {
-  background-color: #2105a0;/* border nga gibutngan sa limehills chuchu*/
+  background-color: #bdaffc;/* border nga gibutngan sa limehills chuchu*/
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+ 
+
+
 }
 
 .nav_logo a {
@@ -29,14 +35,25 @@ nav {
 }
 
 .nav_logo span {
-  color: #00bcd4;/* ang tech nga word*/
+  color: #1505f0;/* ang tech nga word*/
 }
 
+.nav_logo img {
+   
+    width: 25px;
+    height: 25px;
+    
+    
+   
+}
 .nav_links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
-  
+   justify-content: end;
+  position: fixed;
+  width: 95%;
+ 
 }
 
 .nav_links a {
@@ -44,29 +61,39 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   
+  
+  
 }
 
 
 
 .nav_menu_btn {
   display: none;
+
 }
 
-
+/* Hero section layout */
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
 .hero {
-  background: linear-gradient(to right, #040331, #0d0a3a);
-  color: #0eb5df;/* empowering your chuchu ug innovative chuchu*/
-  padding: 5rem 2rem;
+ 
+  color: #ffffff;/* empowering your chuchu ug innovative chuchu*/
   text-align: center;
 }
 
-.hero h1 {
+.hero h1 {/*ang word pagamay*/
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -74,21 +101,21 @@ nav {
   background-color: #00bcd4;/* get started backgrund*/
   color: #fff;/* suwat nga get started*/
   padding: 0.8rem 1.5rem;
-  border: none;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
+  border-radius: 10px;
+  
 }
 /* ig click mo color*/
 .cta_btn:hover {
   background-color: #0193a7;
 }
 
-/* color sa white backg*/
+/* color sa white backg niya ang word nga our services*/
 .services {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #fff;
+  color:#eef2f3
+  
 }
 
 .services h2 {
@@ -103,7 +130,7 @@ nav {
 }
 /* color sa box2*/
 .service_card {
-  background-color: #f8f8f8;
+  background-color: #bdaffc;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -111,15 +138,15 @@ nav {
 /* our services babaw sa mga words */
 .service_card i {
   font-size: 2rem;
-  color: #cd00d4;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
-
+/*contact us nga word*/
 .contact {
   padding: 4rem 2rem;
-  background-color: #eef2f3;/* contact us nga background*/
   text-align: center;
+    color: #fff;
 }
 
 .contact h2 {
@@ -127,18 +154,21 @@ nav {
   margin-bottom: 2rem;
 }
 
+/*ang box nga white*/
 .contact form {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  
 }
 
 .contact input,
 .contact textarea {
   padding: 0.8rem;
-  border: 1px solid #000000;/*mga border sa contact us*/
+  border: 1px solid #ffffff;/*mga border sa your name chuchu*/
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -157,20 +187,44 @@ nav {
   background-color: #0193a7;
 }
 
-/* last/footer */
+/* footer */
 footer {
-  background-color: #040331;
+  background-color: #bdaffc; /* light purple */
   color: #fff;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
 }
+
+footer p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social_icons a {
+  color: #d3bfff; /* Light purple tone */
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social_icons a:hover {
+  color: #a586ff;
+  transform: scale(1.2);
+}
+
 
 .social_icons {
   margin-top: 1rem;
 }
 
 .social_icons a {
-  color: #ffffff;/* fb, insta, chuchu*/
+  color: #000000;/* fb, insta, chuchu*/
   margin: 0 0.5rem;
   font-size: 1.5rem;
   transition: color 0.3s;
@@ -192,12 +246,85 @@ footer {
     font-size: 2.2rem;
   }
 
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.nav_logo img {
-   
-    width: 25px;
-    height: 25px;
-    
-    
-   
+/* Animate heading */
+.animate-heading {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* Animate subtext */
+.animate-subtext {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+/* Optional: smoother font appearance */
+.hero_content h1,
+.hero_content p {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+
+.hero_text {
+  flex: 1 1 500px;
+  max-width: 500px;
+}
+
+
+
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Text animations */
+.animate-heading {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animate-subtext {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .hero_container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
