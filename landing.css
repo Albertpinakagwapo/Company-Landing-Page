@@ -110,6 +110,51 @@ nav {
   background-color: #0193a7;
 }
 
+/* About Section */
+#about {
+  text-align: center;
+  background-image: url(command.webp) ;
+  padding: 5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #eef2f3;
+  
+}
+
+  #about h5 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-grid {
+    display: grid;
+    gap: 2rem;
+    
+  }
+
+  .about-card {
+    padding: 2rem;
+    border-radius: 10px;  
+
+
+  }
+
+  .about-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-card h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-card p {
+    font-size: 0.875rem;
+  }
+
 /* color sa white backg niya ang word nga our services*/
 .services {
   padding: 4rem 2rem;
@@ -130,11 +175,12 @@ nav {
 }
 /* color sa box2*/
 .service_card {
-  background-color: #bdaffc;
+  background-image: url(command.webp) ;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 /* our services babaw sa mga words */
 .service_card i {
   font-size: 2rem;
@@ -207,11 +253,7 @@ footer p {
   gap: 1.5rem;
 }
 
-.social_icons a {
-  color: #d3bfff; /* Light purple tone */
-  font-size: 1.8rem;
-  transition: transform 0.3s, color 0.3s;
-}
+
 
 .social_icons a:hover {
   color: #a586ff;
@@ -328,3 +370,4 @@ footer p {
     text-align: center;
   }
 }
+
